@@ -10,7 +10,6 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[1]" position="before">
                 <page string="Roles">
-                    <field name="role_ids" invisible="1" />
                     <field name="role_line_ids" nolabel="1">
                         <list editable="bottom" decoration-muted="not is_enabled">
                             <field
@@ -25,7 +24,6 @@
                 </page>
             </xpath>
             <xpath expr="//page[@name='access_rights']/group" position="before">
-                <field name="show_alert" invisible="1" />
                 <div
                     class="alert alert-info text-center o_form_header"
                     invisible="not show_alert"
